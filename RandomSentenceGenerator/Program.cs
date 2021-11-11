@@ -10,6 +10,11 @@ namespace RandomSentenceGenerator
 
         static void Main(string[] args)
         {
+            TrueMain();
+        }
+
+        static void TrueMain()
+        {
             Console.Write("Combien de phrases ? : ");
             nbPhrases = getNumberPositif(Console.ReadLine());
             generateTest();
@@ -134,7 +139,7 @@ namespace RandomSentenceGenerator
             if (s == "oui")
             {
                 Console.Clear();
-                generateTest();
+                TrueMain();
             }
         }
     }
